@@ -20,7 +20,7 @@ function Todos() {
     if(editText !== ''){
       dispatch(updateTodo({id, text: editText}))
     }
-    setEditId(null); //dispatch kore initial state ar moto korlam
+    setEditId(null); 
     setEditText('');
    }
 
@@ -57,7 +57,7 @@ function Todos() {
                 onClick={() => dispatch(removeTodo(todo.id))}
                 className="text-white bg-red-500 border-0 py-1 px-4 focus:outline-none hover:bg-red-600 rounded text-md"
               >
-                {/* ...delete svg... */}
+                //delete svg
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
@@ -90,3 +90,4 @@ function Todos() {
 
 
 export default Todos
+
